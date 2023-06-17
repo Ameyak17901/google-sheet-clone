@@ -6,11 +6,11 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 // Screens
 import HomeScreen from "./views/HomeScreen";
 // import DetailsScreen from "./views/DetailsScreen";
-import SettingsScreen from "./views/SettingsScreen";
+import GoogleSheetsClone from "./views/SettingsScreen";
 
 //Screen names
 const homeName = "Home";
-const detailsName = "Details";
+// const detailsName = "Details";
 const settingsName = "Settings";
 
 const Tab = createBottomTabNavigator();
@@ -42,7 +42,7 @@ function MainContainer() {
     >
       <Tab.Screen name={homeName} component={HomeScreen} />
       {/* <Tab.Screen name={detailsName} component={DetailsScreen} /> */}
-      <Tab.Screen name={settingsName} component={SettingsScreen} />
+      <Tab.Screen name={settingsName} component={GoogleSheetsClone} />
     </Tab.Navigator>
     // </NavigationContainer>
   );
